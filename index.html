@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="page-container">
+            <div id="title-container">
+                <h1 id="title">HackDade 2020</h1>
+                <p id="description">Dale! Let's get started!</p>
+            </div>
+            <br>
+            <div id="form-container">
+                <p><strong>Please fill out the form to register.</strong></p>
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input placeholder="Full Name" type="text" id="name" name="info" required><br><br>
+                    <label for="email" id="email-label">Email</label><br>
+                    <input placeholder="Email Address" type="email" id="email" name="info" required><br><br>
+                    <label for="number" id="number-label">Age</label><br>
+                    <input placeholder="Age" type="number" id="number" name="info" min="18" max="35" required><br><br>
+                    <label for="dropdown">Shirt</label><br>
+                    <select name="dropdown" id="dropdown" required><br><br>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select><br><br>
+                    <label for="address">Address</label><br>
+                    <input placeholder="Address" type="text" name="info" id="address" required><br><br>
+                    <label for="address2">Address 2</label><br>
+                    <input placeholder="Apt/Unit/Suite" type="text" name="info" id="address2"><br><br>
+                    <label for="city">City</label><br>
+                    <input placeholder="City" type="text" name="info" id="city" required><br><br>
+                    <label for="state">State</label><br>
+                    <input placeholder="State" type="text" name="info" id="state" required><br><br>
+                    <label for="gender">Gender</label><br>
+                    <select name="dropdown" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <!--<option value="No-answer">Prefer not to answer</option>
+                        <option value="Other">Other</option>-->
+                        <option value="Other">Boeing AH-64 Apache</option>
+                    </select><br><br>
+                    <p><strong>What is your race/ethnicity? (check all that apply)</strong></p>
+                    <input type="checkbox" id="european" name="race" value="european">
+                    <label for="european">Non-Hispanic White or Euro-American</label>
+                    <br>
+                    <input type="checkbox" id="black" name="race" value="black">
+                    <label for="black">Black, Afro-Caribbean, or African-American</label>
+                    <br>
+                    <input type="checkbox" name="race" id="hispanic" value="hispanic">
+                    <label for="hispanic">Latinx or Hispanic-American</label>
+                    <br>
+                    <input type="checkbox" name="race" id="east-asian" value="east-asian">
+                    <label for="east-asian">East Asian or Asian-American</label>
+                    <br>
+                    <input type="checkbox" name="race" id="se-asian" value="se-asian">
+                    <label for="se-asian">Southeast Asian or Southeast Asian-American</label>
+                    <br>
+                    <input type="checkbox" name="race" id="south-asian" value="south-asian">
+                    <label for="south-asian">South Asian or South Asian-American</label>
+                    <br>
+                    <input type="checkbox" name="race" id="middle-eastern" value="middle-eastern">
+                    <label for="middle-eastern">Middle Eastern or North African</label>
+                    <br>
+                    <input type="checkbox" name="race" id="native" value="native">
+                    <label for="native">Native American or Alaskan Native</label>
+                    <br>
+                    <input type="checkbox" name="race" id="hawaiian" value="hawaiian">
+                    <label for="hawaiian">Hawaiian or Pacific Islander</label>
+                    <br>
+                    <input type="checkbox" name="race" id="other" value="other">
+                    <label for="other">Other</label>
+                    <br>
+                    <input type="checkbox" name="race" id="prefer-not" value="prefer-not">
+                    <label for="prefer-not">Prefer not to answer</label>
+
+                    <p><strong>How did you hear about us?</strong></p>
+                    <input type="radio" name="reference" id="search" value="search">
+                    <label for="search">Search engine (Google, Bing, etc.)</label><br>
+                    <input type="radio" name="reference" id="friend" value="friend">
+                    <label for="friend">Recommended by friend or colleague</label><br>
+                    <input type="radio" name="reference" id="social" value="social">
+                    <label for="social">Social media</label><br>
+                    <input type="radio" name="reference" id="blog" value="blog">
+                    <label for="blog">Blog or publication</label><br>
+                    <input type="radio" name="reference" id="other" value="other">
+                    <label for="other">Other</label><br><br>
+                    <label><strong>What workshops would you like to see at the event?</strong></label><br><br>
+                    <textarea placeholder="Mobile Dev, Game Dev, Web Dev, etc." id="workshop"></textarea><br><br>
+                    <label for="linkedin">LinkedIn</label><br>
+                    <input placeholder="https://www.linkedin.com/in/username" type="text" id="linkedin" name="info" required><br><br>
+                    <label for="github">GitHub</label><br>
+                    <input placeholder="https://github.com/username" type="text" id="github" name="info" required><br><br>
+                    <label for="website">Website</label><br>
+                    <input placeholder="Website" type="text" id="website" name="info" required><br><br>
+                    <form action="/action_page.php">
+                        <label>Upload Resume</label><br>
+                        <input type="file" id="myFile" name="filename"><br><br>
+                        <input type="submit" id="submit">
+                    </form>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

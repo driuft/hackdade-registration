@@ -1,0 +1,106 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*background: rgb(204,239,255);
+    background: linear-gradient(90deg, rgba(204,239,255,1) 0%, rgba(255,204,242,1) 100%);
+    background: linear-gradient(90deg, rgba(153,204,255,1) 0%, rgba(255,153,255,1) 100%);
+    background: linear-gradient(-45deg, #99ccff, #ff99ff);*/
+    background: linear-gradient(-45deg, #99ccff, #9999ff, #cc99ff, #ff99ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 0.4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    opacity: 0.4;
+}
+
+#page-container {
+    margin: auto;
+    width: 50%;
+}
+
+#title-container {
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 3px 3px 15px rgba(0,0,0, 0.1);
+}
+
+#title {
+    font-size: 4.5vw;
+    font-weight: 800;
+    padding-top: 10%;
+    margin: 0%;
+}
+
+#description {
+    margin: 0%
+    
+}
+
+#form-container {
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 400;
+    text-shadow: 0px 1px 7px rgba(0,0,0, 0.2);
+    padding-bottom: 15%;
+}
+
+#name, #email, #number, #address, #address2, #city, #state, #workshop, #linkedin, #github, #website {
+    width: 100%;
+    padding: 1.5%;
+    border: none;
+}
+
+#dropdown {
+    width: 103%;
+    padding: 1.5%;
+    border: none;
+}
+
+#gender {
+    width: 103%;
+    padding: 1.5%;
+    border: none;
+}
+
+#workshop {
+    padding-bottom: 10%;
+}
+
+#submit {
+    width: 50%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 2%;
+    text-align: center;
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 800px) {
+        #page-container {width: 100%;}
+        #form-container {width: 70%;}
+}
